@@ -16,6 +16,13 @@
 function je_nicht() {
   console.log("boeler");
   var waarde = document.getElementById("je_broer").value;
-  var antwoord = (waarde * Math.PI);
+  let antwoord = (waarde * Math.PI);
+  document.getElementById("text").innerHTML = antwoord;
+}
+
+function je_tante() {
+  console.log("boeler");
+  var waarde = document.getElementById("je_broer").value;
+  let antwoord = (waarde * waarde * Math.PI * 0.25);
   document.getElementById("text").innerHTML = antwoord;
 }
